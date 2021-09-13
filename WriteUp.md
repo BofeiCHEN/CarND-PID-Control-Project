@@ -6,29 +6,21 @@ Self-Driving Car Engineer Nanodegree Program
 ### The effect of proportional (P)
 The P value will deceide the finally value of the controller. However, if there is just the P hyperparameter in the controler, the controller output will oscillate around the finally value. Even more, the oscillation will faster with the increase of P value.
 
-One video is shown as following, where just the P value is setted.
+One video is saved in the folder **videos** as *P_control_480.mov* and the **.gif** image as following, where just the P value is setted.
 
-![P control video](videos/P_control_480.mov)
+![P control video](images/P_control_480.gif)
 
-<video width="320" height="240" controls>
-  <source src="videos/P_control_480.mov" type="video/mov">
-</video>
+
 
 ### The effect of derivative (D)
-The D component can reduce the oscillation by detecting the changing of CTE. When we get one suitable value for D, the oscillation will become slightly as shown in video following where just the P and D components in controller:
-![PD control video](videos/PD_control_480.mov)
+The D component can reduce the oscillation by detecting the changing of CTE. When we get one suitable value for D, the oscillation will become slightly as shown in  the following **.gif** where just the P and D components in controller. The original video *PD_control_480.mov* can be found in folder *videos*.
+![PD control video](images/PD_control_480.gif)
 
-<video width="320" height="240" controls>
-  <source src="videos/PD_control_480.mov" type="video/mov">
-</video>
 
 ### The effect of integral (I)
-The I component can reduce the reaction time, however more oscillation will be introduced also, which is evident in the curve part of the road. As shown in the following video, comparing with the previous video controller by PD controller, the car react more quickly in the meanwhile some over reaction is brought out leading to more oscillation. 
-![PID control video](videos/PID_control_480.mov)
+The I component can reduce the reaction time, however more oscillation will be introduced also, which is evident in the curve part of the road. As shown in the following video, comparing with the previous video controller by PD controller, the car react more quickly in the meanwhile some over reaction is brought out leading to more oscillation. One original video *PID_control_480.mov* can be found in folder *videos*. The **.gif** image as following:
+![PID control video](images/PID_control_480.gif)
 
-<video width="320" height="240" controls>
-  <source src="videos/PID_control_480.mov" type="video/mov">
-</video>
 
 ### Tuning step by step
 Considering about their features of the three hyperparameters, I tuned them in the order or P -> D -> I.
